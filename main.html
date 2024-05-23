@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="main.css" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+</head>
+
+<body>
+  <div id="homeNavigate">
+    <!-- sideNav-------------------------- -->
+    <div class="n">
+      <div class="bar">
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#homeNavigate">HOME</a>
+          <a href="#about">ABOUT</a>
+          <a href="#skill">SKILLS</a>
+          <a href="#projects">PROJECT</a>
+          <a href="#contact">CONTACT</a>
+        </div>
+        <span id="menu" onclick="openNav()">&#9776; </span>
+      </div>
+    </div>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "300px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+    <!-- ----------------------------sideNav -->
+    <div class="nav">
+      <div class="sub_nav">
+        <div id="h"><a href="#homeNavigate">HOME</a></div>
+        <div id="a"><a href="#about">ABOUT</a></div>
+        <div id="sk"><a href="#skill">SKILL</a></div>
+        <div id="p"><a href="#projects">PROJECTS</a></div>
+        <div id="c"><a href="#contact">CONTACT</a></div>
+      </div>
+    </div>
+    <div class="body">
+      <div class="bg">
+        <div class="right">
+          <div class="head">
+            <h1>
+              <span id="h">i'm</span> <br /><span>ThamilAlagan</span>
+            </h1>
+            <div id="img_respon" class="img_align">
+              <img src="/img/full.jpg" />
+            </div>
+            <h2><span id="m">Web</span> <span id="m1">Developer</span></h2>
+            <h3>
+              <!-- I'm Web Designer || Front-End -->
+              i'm <span class="auto"></span>
+            </h3>
+
+            <div class="anchor">
+              <a href="ThamilAlagan_resume.pdf"><span>Resume</span></a>
+            </div>
+            <div class="icon reveal">
+              <div>
+                <a href="https://www.facebook.com" class="fa fa-facebook" id="d"></a>
+              </div>
+              <div>
+                <a href="https://www.linkedin.com" class="fa fa-linkedin" id="d">
+                </a>
+              </div>
+              <div>
+                <a href="https://www.instagram.com" class="fa fa-instagram" id="d"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <h2>Full <span id="sp">Stack</span> Web <span id="sp">Developer</span></h2> -->
+      </div>
+    </div>
+    <!-- script -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      let typed = new Typed(".auto", {
+        strings: ["Front-End Developer..", "UI Designer.."],
+        typeSpeed: 150,
+        backSpeed: 150,
+        loop: true,
+      });
+    </script>
+
+    <!-- script -->
+
+    <!-- ---------------------ABOUT------------- -->
+
+    <div id="about">
+      <div class="about1 about_sec">
+        <div class="about2 reveal">
+          <div class="row">
+            <div class="col-sm-5 ab about_col">
+              <img src="img/t1.jpg" width="450px" height="400px" id="s">
+
+              <!-- <h1 id="q1" class="reveal"><span>Get</span>-To-<span>Know</span>-Me</h1> -->
+              <h1 id="q1" class="reveal"><span>About</span>-Me</h1>
+              <div class='p_content'>
+                <!-- <h3 id="q" class="reveal">I'm <span>Web</span> Developer</h3> -->
+                <p class="reveal">
+                  <!-- <span id="symb">&#8680</span> I'm a <b>Web Developer</b>, passionate in Web Development & Designing. Looking forward to pursue my career in Web Development.<br><span id="symb">&#8680</span> I'm able to 
+          work on <b>Front-End & Back-End</b> Development. <br><span id="symb">&#8680</span> I have completed full stack web Development course & I have completed Full stack Internship(6-weeks)<br>
+        <br><span id="symb">&#8680</span> I gained <i>Hands-on</i> experience and Knowledge in developing Web pages & Web Applications -->
+
+                  <li>I'm dedicated Front-End Web Developer with a keen interest in React JS with (1 year) experience,
+                    Driven by crafting pixel-perfect, performant UIs with React.</li>
+                  <li> With a journey spanning just over 1 year of hands-on coding, I have embraced the challenges of
+                    the web development world & focusing on building reusable and maintainable codebases.</li>
+                  <li>Thrilled by clean code, building reusable components, and staying current with web trends, eager
+                    to solve challenges and build impactful products</li>
+                  <li>Through my collaboration with UX/UI designers, I have contributed to creating interfaces that are
+                    intuitive, appealing, and enhancing.</li>
+                  <li>My proficiency extends from Git to React Router to Axios, and Bootstrap.</li>
+                  <li>Understanding the integration of REST APIs to elevate user experiences ensures that I’m equipped
+                    to tackle the challenges of modern web development.</li>
+                </p>
+
+              </div>
+            </div>
+            <!-- <div class="col-sm-5">
+      <img src="img/t1.jpg" width="430px" height="598px" id="r">
+      </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SKILLS------------------ -->
+    <div id="skill">
+      <div class="skill ">
+        <h1 class="reveal">competencies </h1>
+        <i class='fa fa-chevron-down' id="chev"></i>
+
+      </div>
+      <div class="skil1 reveal">
+        <div class="row rw">
+          <div class="col-sm-5 col1">
+
+            <div class='spa reveal'>
+              <h1>html</h1>
+              <div class="progress" id="pg">
+                <div class="progress-bar " role="progressbar" style="width:90%;">
+                </div>
+              </div>
+            </div>
+            <div class="spa reveal">
+              <h1>css & bootstrap</h1>
+              <div class="progress" id="pg">
+                <div class="progress-bar " role="progressbar" style="width:85%;">
+                </div>
+              </div>
+            </div>
+            <div class="spa reveal">
+              <h1>javascript</h1>
+              <div class="progress" id="pg">
+                <div class="progress-bar " role="progressbar" style="width:60%;">
+                </div>
+              </div>
+            </div>
+            <div class="spa reveal">
+              <h1>jquery</h1>
+              <div class="progress" id="pg">
+                <div class="progress-bar " role="progressbar" style="width:70%;">
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-sm-5 col2">
+            <div class="spa reveal">
+              <h1>react js</h1>
+              <div class="progress" id="pg">
+                <div class="progress-bar" role="progressbar" style="width:60%;">
+                </div>
+              </div>
+            </div>
+            <div class="spa reveal">
+              <h1>python</h1>
+              <div class="progress" id="pg">
+                <div class="progress-bar " role="progressbar" style="width:70%;">
+                </div>
+              </div>
+            </div>
+            <div class="spa reveal">
+              <h1>django</h1>
+              <div class="progress" id="pg">
+                <div class="progress-bar " role="progressbar" style="width:50%;">
+                </div>
+              </div>
+            </div>
+            <div class="spa reveal">
+              <h1>mysql</h1>
+              <div class="progress" id="pg">
+                <div class="progress-bar " role="progressbar" style="width:65%;">
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -----PROJECTS------------------------ -->
+    <div id="projects">
+      <div class="prj">
+      </div>
+      <h1 class="reveal">My-work</h1>
+      <div class="column" id="col">
+
+        <div class="prt reveal" id="j">
+          <img src="img/cont4.jpg" width="100%" height="275px">
+          <div id="pj">
+            <p>Front-End</p>
+          </div>
+        </div>
+
+        <div class="prt reveal">
+          <img src="img/d3.jpg" width="100%" height="275px">
+          <div id="pj">
+            <p>Front-End</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column" id="col_1">
+        <div class="prt reveal" id="j">
+          <img src="img/d3.jpg" width="100%" height="280px">
+          <div id="pj">
+            <p>Front-End</p>
+          </div>
+        </div>
+
+        <div class="prt reveal">
+          <img src="img/d3.jpg" width="100%" height="280px">
+          <div id="pj">
+            <p>Front-End</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-----------------------CONTACT------------------------>
+
+    <div id="contact">
+      <div class="contact">
+        <div class="ctc">
+          <div class="hd" id="cont">
+            <center>
+              <h1><span>G</span>et <span>I</span>n <span>T</span>ouch...</h1>
+            </center>
+            <h5>I am always open to discussing new projects, creative ideas or oppurtunities to be part of you visions.
+            </h5>
+            <h6> <i class="fa fa-envelope ion"></i> thamilalagan95@gmail.com </h6>
+            <h6> <i class="fa fa-phone ion"></i> 0123456789 </h6>
+            <center><button onclick="show()">send</button></center>
+          </div>
+
+          <div class="form" id="frm">
+            <input type="text" placeholder="Name" name="fname">
+            <input type="text" placeholder="Email">
+            <input type="text" placeholder="Mobile-No">
+            <!-- <input type="text" placeholder="Message"> -->
+            <textarea rows="4" cols="15" placeholder="Leave your comments"></textarea>
+            <br>
+            <!-- <h5><a href='#'>submit</a>  <a href='#contact' onclick="hide()" id="b">back</a> </h5> -->
+            <h5><button onclick="form()">submit</button> <button id="b"><a href='#contact'
+                  onclick="hide()">back</a></button> </h5>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <script>
+
+
+    </script>
+
+    <script>
+      function show() {
+        document.getElementById('cont').style.display = 'none';
+        document.getElementById('frm').style.display = 'block';
+      }
+      function hide() {
+        document.getElementById('frm').style.display = 'none';
+        document.getElementById('cont').style.display = 'block';
+      }
+    </script>
+
+    <script>
+      function reveal() {
+        let rev = document.querySelectorAll('.reveal');
+
+        for (let i = 0; i < rev.length; i++) {
+          let WH = window.innerHeight;
+          let elmtop = rev[i].getBoundingClientRect().top;
+          let elmVis = 150;
+
+          if (elmtop < WH - elmVis) {
+            rev[i].classList.add('act');
+          } else {
+            rev[i].classList.remove('act');
+          }
+        }
+      }
+      window.addEventListener('scroll', reveal);
+    </script>
+
+
+
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "300px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+
+
+
+
+    <script>
+      function myFunction() {
+        myVar = setTimeout(showPage, 3000);
+      }
+
+      function showPage() {
+        document.getElementById("ring").style.display = "none";
+        document.getElementById("myDiv").style.display = "block";
+      }
+    </script>
+
+
+  </div>
+</body>
+
+</html>
+
+</div>
+</body>
+
+</html>
