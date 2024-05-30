@@ -176,8 +176,8 @@ html {
   display: none;
 }
 .head {
-  margin-left: 38rem;
-  margin-top: 15rem;
+  margin-left: 60rem;
+  margin-top: 20rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -645,11 +645,11 @@ html {
   text-align: justify;
   color: black;
   margin-top: 1rem;
-  margin-left: 100px;
+  margin-left: 55px;
   width: 75%;
   word-spacing: 2px;
   font-weight: 600;
-  font-size: 17px;
+  font-size: 15px;
   font-family: system-ui;
   border-bottom-left-radius: 40px;
   /* padding: 20px 10px; */
@@ -725,7 +725,7 @@ html {
 .skil1 {
   display: flex;
   justify-content: center;
-  height: 50vh;
+  height: 70vh;
 }
 .skil1_container {
   height: 50rem;
@@ -774,7 +774,7 @@ html {
 /* ------------projects--------------------- */
 .prj {
   /* background: linear-gradient(top top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(img/e.jpg); */
-  background: url(img/e.jpg);
+  background: url(img/project.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -801,7 +801,7 @@ html {
   /* box-shadow: 15px 12px 10px 4px; */
 }
 .prt:hover {
-  transform: scale(1.05);
+  /* transform: scale(1.05); */
   transition: 0.7s;
 }
 #pj {
@@ -814,6 +814,9 @@ html {
 #j {
   margin-left: 190px;
 }
+#k{
+  margin-left: 10px;
+}
 /* ------------------contact------------------- */
 .contact {
   background: linear-gradient(
@@ -821,7 +824,7 @@ html {
       rgba(0, 0, 0, 0.5) 50%,
       rgba(0, 0, 0, 0.5) 50%
     ),
-    url(img/cont4.jpg);
+    url(img/contact_us.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -951,6 +954,17 @@ html {
 /* -------------------------------------------------------------- */
 
 @media only screen and (max-width: 450px) {
+  .reveal {
+    position: relative;
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  .reveal.act {
+    transform: translateY(0);
+    opacity: 1;
+  }
+ 
   /* ------------------- ABOUT---------------------- */
   #about {
     background: url('img/p.jpg');
@@ -965,19 +979,20 @@ html {
     /* background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(img/b.jpeg); */
     background: none;
     background-size: cover;
-    height: 175vh;
+    height: 190vh;
     padding-top: 120px;
   }
   .about_sec {
     width: 95%;
   }
   .about_col {
-    margin-left: -5rem;
+    margin-left: 0;
     margin-right: 1rem;
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    width: 95%;
+    width: 90%;
+    align-items: center;
   }
   .about2 .p_content {
     text-align: justify;
@@ -1012,49 +1027,23 @@ html {
     font-variant: all-small-caps;
     font-weight: revert;
     color: black;
-    /* border-bottom: 3px solid rebeccapurple;
-    border-left: 3px solid rebeccapurple;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px; */
     padding: 5px;
-    width: 52%;
+    width: 60%;
     filter: none;
     letter-spacing: 0px;
     /* text-align: center; */
   }
 
-  /* .about2 p {
-    text-align: justify;
-    color: black;
-    margin-top: 30px;
-    margin-left: 35px;
-    width: 83%;
-    word-spacing: -2px;
-    font-size: 18px;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    border-bottom: 3px solid rebeccapurple;
-    border-left: 3px solid rebeccapurple;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    padding: 20px;
-  } */
   #r {
     margin-left: 124px;
     border-top-right-radius: 50px;
     display: none;
   }
-  /* #s {
-    display: block;
-    width: 100%;
-    border-top-right-radius: 50px;
-    margin-top: -45px; */
-  /* } */
   .about_img{
-display: block;
-border-radius: 50%;
+    display: block;
+    border-radius: 50%;
+    margin-left: 8rem;
+    
   }
   /* ---------SKILLS------------------------------------ */
   .skill {
@@ -1080,8 +1069,8 @@ border-radius: 50%;
     top: 12rem;
   }
   .skil1_container {
-    height: 85rem;
-    width: 95%;
+    height: 65rem;
+    width: 90%;
     background-color: azure;
     /* margin-left: 10px; */
     /* margin-top: -200px; */
@@ -1097,7 +1086,7 @@ border-radius: 50%;
   .skil1 {
     display: flex;
     justify-content: center;
-    height: 87vh;
+    height: 70vh;
   }
   .col1 {
     margin-left: 0rem;
@@ -1110,6 +1099,16 @@ border-radius: 50%;
     width: 90%;
     top: 0rem;
   }
+  .col1 h1 {
+    font-size: 15px;
+    font-weight: 600;
+    font-variant: small-caps;
+  }
+  .col2 h1 {
+    font-size: 15px;
+    font-weight: 600;
+    font-variant: small-caps;
+}
   .spa {
     margin-bottom: 0px;
         display: flex;
@@ -1120,10 +1119,32 @@ border-radius: 50%;
   .spa h1 {
     margin: 0;
   }
+  #pg {
+    height: 25px;
+    width: 90%;
+    box-shadow: -3px -5px 2px;
+  }
 /* ------------project------------------- */
+.prj {
+  /* background: linear-gradient(top top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(img/e.jpg); */
+  /* background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.7) 50%,
+    rgba(0, 0, 0, 0.7) 50%
+  ),
+  url(img/contact_us.jpg); */
+}
 #projects {
   /* background: #bbb; */
-  border-radius: 55px;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(img/project.jpg);
+
+  /* background: url(img/project.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /* height: 500px; */
+  /* border-radius: 55px; */
   margin: 7px;
 }
 .prj {
@@ -1132,11 +1153,14 @@ border-radius: 50%;
 #projects h1 {
   margin-top: 145px;
   padding-top: 42px;
-  font-size: 36px;
+  font-family: fantasy;
+  font-size: 85px;
   font-variant: small-caps;
   text-align: center;
   display: block;
   letter-spacing: 4px;
+  color: orangered;
+  -webkit-text-stroke: 2px white;
 }
 #col {
   padding-top: 350px;
@@ -1152,19 +1176,26 @@ border-radius: 50%;
   margin-top: -250px;
 }
 #j {
-  margin-left: 27px;
+  margin-left: 10px;
+}
+#k {
+  margin-left: 10px;
 }
 .prt {
-  width: 85%;
-  height: 210px;
+  width: 95%;
+  height: 250px;
   margin-left: 27px;
   margin-right: 10px;
   margin-bottom: 35px;
-  box-shadow: 12px 9px 4px 1px;
+  box-shadow: none;
   background: azure;
 }
 .prt img {
-  height: 170px;
+  height: 210px;
+}
+.prt:hover {
+  transform: scale(1);
+  transition: 0.7s;
 }
 #pj {
   padding: 5px;
@@ -1174,10 +1205,10 @@ border-radius: 50%;
 .contact {
   background: linear-gradient(
       to top,
-      rgba(0, 0, 0, 0.5) 50%,
-      rgba(0, 0, 0, 0.5) 50%
+      rgba(0, 0, 0, 0.7) 50%,
+      rgba(0, 0, 0, 0.7) 50%
     ),
-    url(img/cont4.jpg);
+    url(img/contact_us.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1185,21 +1216,21 @@ border-radius: 50%;
   height: 105vh;
 }
 .ctc {
-  background: #ddd;
+  background: transparent;
   height: 528px;
-  width: 95%;
+  width: 90%;
   margin-top: 50px;
-  margin-left: 10px;
+  margin-left: 20px;
   position: absolute;
   top: 50px;
   display: flex;
   flex-direction: row;
-  border-radius: 10px;
+  border-radius: 50px;
 }
 .hd h1 {
   margin-left: 20px;
   margin-top: 55px;
-  width: 60%;
+  width: 75%;
   padding-bottom: 0px;
   padding-left: 0px;
   font-size: 22px;
@@ -1208,68 +1239,69 @@ border-radius: 50%;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   font-variant: small-caps;
-  border-bottom: 4px solid black;
-  border-left: 4px solid black;
-  border-top-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border:none;
+  color: white;
 }
 .hd h1 span {
   font-size: 40px;
 }
 .hd h5 {
-  margin-left: 20px;
-  margin-top: 30px;
-  margin-right: 10px;
-  font-size: 18px;
-  width: 90%;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  text-align: justify;
-  background: chocolate;
-  border: 4px solid black;
-  border-top: none;
-  border-left: none;
-  border-bottom-left-radius: 20px;
-  border-top-right-radius: 20px;
-  padding-right: 15px;
-  padding-left: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  box-shadow: 5px 8px 6px 2px;
+  margin-left: 30px;
+    margin-top: 30px;
+    margin-right: 10px;
+    font-size: 15px;
+    width: 85%;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    text-align: justify;
+    color: black;
+    background: dodgerblue;
+    border: 4px solid black;
+    border-top: none;
+    border-left: none;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: 1px 1px 0px 0px;
 }
 .hd h6 {
-  background: chocolate;
-  width: 90%;
-  margin-left: 20px;
+  background: dodgerblue;
+  color: black;
+  width: 85%;
+  margin-left: 30px;
   margin-top: 30px;
   border: 4px solid black;
   border-top: none;
   border-left: none;
   border-bottom-left-radius: 20px;
   border-top-right-radius: 20px;
-  padding-right: 15px;
-  padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 15px;
   padding-top: 0px;
   padding-bottom: 0px;
-  font-size: 18px;
+  font-size: 15px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   box-shadow: 5px 8px 6px 2px;
 }
 .hd button {
   display: block;
   border: none;
-  padding: 2px 2px;
-  background: purple;
+  padding: 6px 6px;
+  background: black;
   margin-top: 30px;
-  width: 25%;
-  border-radius: 10px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  width: 60%;
+  border-radius: 15px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-variant: small-caps;
-  font-size: 25px;
+  font-size: 15px;
   letter-spacing: 2px;
+  color: wheat;
 }
 .hd button:hover {
-  box-shadow: 0px 0px 3px 3px black;
+  /* box-shadow: 0px 0px 3px 3px black; */
+  color: aqua;
 }
 .form {
   display: flex;
@@ -1277,17 +1309,22 @@ border-radius: 50%;
   background: none;
   width: 100%;
   margin-left: 0px;
-  padding-top: 75px;
+  padding-top: 8rem;
   border-left: none;
   display: none;
   background: url(img/grad.jpeg);
   background-position: center;
+  border-radius: 50px;
 }
 .form input {
   width: 70%;
-  padding: 10px;
-  margin-bottom: 20px;
-  margin-left: 62px;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    /* border-radius: 15px; */
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid black;
 }
 .form h5 a {
   text-decoration: none;
@@ -1296,8 +1333,14 @@ border-radius: 50%;
   color: black;
 }
 .form textarea {
-  margin-left: 62px;
+  margin-left: 60px;
   width: 70%;
+  background: transparent;
+  border-bottom: 1px solid black;
+  border-top: transparent;
+  border-left: transparent;
+  /* border: none; */
+  border-right: transparent;
 }
 .form h5 button {
   margin-left: 0px;
@@ -1312,7 +1355,12 @@ border-radius: 50%;
 #b {
   display: block;
 }
-
+input::placeholder{
+color: white;
+}
+.textarea::placeholder{
+  color:white
+}
 
 }
 
