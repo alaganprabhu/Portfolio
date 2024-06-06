@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
 * {
   margin: 0;
@@ -440,7 +439,7 @@ html {
     background: none;
     height: 100vh;
     margin-top: 12rem;
-    margin-bottom: 14rem;
+    margin-bottom: 0rem;
   }
   #menu {
     font-size: 30px;
@@ -450,10 +449,10 @@ html {
 
   .bar {
     position: relative;
-        width: 90%;
-        padding: 15px;
-        margin-bottom: 20px;
-        background: none;
+    width: 90%;
+    padding: 15px;
+    margin-bottom: 20px;
+    background: none;
   }
   .n {
     display: block;
@@ -518,7 +517,7 @@ html {
   .head h1 span {
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
-    font-weight:700;
+    font-weight: 700;
     font-size: 50px;
     font-variant: small-caps;
     margin-left: 0px;
@@ -528,7 +527,7 @@ html {
 
   .head h2 {
     font-size: 28px;
-    font-family: 'Alata';
+    font-family: "Alata";
     margin-left: 0%;
     /* margin-top: 3.5rem; */
     margin-bottom: 0rem;
@@ -573,14 +572,14 @@ html {
   }
   .anchor a {
     text-decoration: none;
-        font-size: 20px;
-        font-family: alata;
-        font-variant: all-small-caps;
-        font-weight: 700;
-        color: black;
-        letter-spacing: 5px;
-        position: absolute;
-        bottom: 10%;
+    font-size: 20px;
+    font-family: alata;
+    font-variant: all-small-caps;
+    font-weight: 700;
+    color: black;
+    letter-spacing: 5px;
+    position: absolute;
+    bottom: 10%;
   }
 
   .icon {
@@ -984,7 +983,6 @@ html {
     transform: translateY(0);
     opacity: 1;
   }
- 
 
   /* ------------------- ABOUT---------------------- */
   #about {
@@ -994,13 +992,14 @@ html {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background: none;
-    margin-bottom: 14rem;
+    margin-bottom: 0rem;
+    margin-top: 3rem;
   }
   .about1 {
     /* background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(img/b.jpeg); */
     background: none;
     background-size: cover;
-    height: 170vh;
+    height: 145vh;
     /* padding-top: 120px; */
   }
   .about_sec {
@@ -1067,7 +1066,14 @@ html {
   }
   /* ---------SKILLS------------------------------------ */
   .skill {
-    background: url(img/sk.png);
+    /* background: url(img/sk.png); */
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.3) 50%,
+        rgba(0, 0, 0, 0.3) 50%
+      ),
+      url(img/sk.png);
+
     height: 500px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1079,13 +1085,14 @@ html {
   }
   #skill .skill_h1 {
     font-size: 40px;
-    font-family: fantasy;
+    font-family: "Alata", sans-serif;
+text-shadow: none;
     font-variant: small-caps;
     font-weight: bold;
     letter-spacing: 7px;
     position: absolute;
-    text-shadow: 4px 2px 2px whitesmoke;
     color: black;
+    -webkit-text-stroke: 0.1px cyan;
     top: 12rem;
   }
   .skil1_container {
@@ -1106,7 +1113,7 @@ html {
   .skil1 {
     display: flex;
     justify-content: center;
-    height: 70vh;
+    height: 60vh;
   }
   .col1 {
     margin-left: 0rem;
@@ -1374,14 +1381,14 @@ html {
   }
   .form h5 button {
     margin-left: 0px;
-        flex-direction: row;
-        position: relative;
-        /* left: 28%; */
-        /* margin-top: 10px; */
-        font-size: 20px;
-        font-weight: 600;
-        font-family: alata;
-        letter-spacing: 3px;
+    flex-direction: row;
+    position: relative;
+    /* left: 28%; */
+    /* margin-top: 10px; */
+    font-size: 20px;
+    font-weight: 600;
+    font-family: alata;
+    letter-spacing: 3px;
   }
   .form h5 {
     display: flex;
@@ -1393,7 +1400,7 @@ html {
     font-size: 20px;
     font-variant: small-caps;
     color: black;
-}
+  }
   #b {
     display: block;
   }
