@@ -203,12 +203,9 @@ html {
 }
 .head h2 {
   font-size: 50px;
-  font-family: monospace;
-  /* margin-left: 590px; */
-  /* margin-top: 180px; */
-  /* position: absolute; */
-  /* top: 125%; */
+  font-family: "Alata", sans-serifx;
   font-weight: 600;
+  font-variant: small-caps;
   border: 2px solid black;
   padding: 10px 0px;
   box-shadow: 7px 6px 2px 2px black;
@@ -219,13 +216,15 @@ html {
 #m {
   background: black;
   color: white;
+  letter-spacing: 6px;
   padding-right: 2rem;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 2px;
+  padding-bottom: 3px;
   padding-left: 2rem;
 }
 #m1 {
   /* position: relative; */
+  letter-spacing: 8px;
   left: -3%;
 }
 @keyframes slide {
@@ -332,13 +331,12 @@ html {
   right: 0;
 }
 /* ----icon--------- */
-.icon {
+/* .icon {
   display: flex;
   flex-direction: column;
   gap: 10px;
   width: 300px;
   margin-top: 3rem;
-  /* animation: up 5s linear; */
   position: absolute;
   left: 0rem;
   top: 16rem;
@@ -370,11 +368,10 @@ html {
   margin: 5px 2px;
   transition: 1s;
   box-shadow: 4px 3px 1px 1px black;
-}
-.fa-facebook {
+} */
+/* .fa-facebook {
   border: 1px solid red;
   color: black;
-  /* position: relative; */
   border-radius: 50%;
 }
 .fa-linkedin {
@@ -392,6 +389,62 @@ html {
   color: white;
   transform: scale(1.1);
   transition: 1s;
+} */
+
+/* -------------FOOTER--------------------- */
+
+.footer_section {
+  display: flex;
+  /* justify-content: center; */
+  /* gap: 6rem; */
+
+  flex-direction: column;
+  gap: 15px;
+  width: 0px;
+  margin-top: 3rem;
+  /* animation: up 5s linear; */
+  position: absolute;
+  left: 1rem;
+  top: 16rem;
+  position: fixed;
+  z-index: 1;
+}
+.footer_section a {
+  font-size: 22px;
+  color: white;
+}
+#facebook {
+  background: blue;
+  padding: 16px 22px;
+  border-radius: 50px;
+  box-shadow: 3px 2px 5px 0px black;
+}
+#twitter {
+  background: dodgerblue;
+  padding: 16px 19px;
+  border-radius: 50px;
+  box-shadow: 3px 2px 5px 0px black;
+}
+#youtube {
+  background: red;
+  padding: 16px 19px;
+  border-radius: 50px;
+  box-shadow: 3px 2px 5px 0px black;
+}
+#linkedin {
+  background: dodgerblue;
+  padding: 16px 19px;
+  border-radius: 50px;
+  box-shadow: 3px 2px 5px 0px black;
+}
+#instagram {
+  background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+  padding: 16px 19px;
+  border-radius: 50px;
+  box-shadow: 3px 2px 5px 0px black;
+}
+.footer_section_responsive{
+  display: none;
 }
 
 /* tpyewriter------------------------ */
@@ -481,13 +534,15 @@ html {
   #m {
     background: black;
     color: white;
-    padding-right: 2rem;
-    padding-top: 5px;
-    padding-bottom: 7px;
-    padding-left: 2rem;
+    padding-right: 1rem;
+    padding-top: 6px;
+    padding-bottom: 8px;
+    padding-left: 1.5rem;
+    letter-spacing: 3px;
   }
   #m1 {
     position: relative;
+    letter-spacing: 3px;
     left: 1%;
   }
   #img_respon {
@@ -808,6 +863,7 @@ html {
   flex-direction: row;
   margin-bottom: 190px;
   margin-top: -150px;
+  justify-content: center;
 }
 .prt {
   width: 470px;
@@ -831,7 +887,7 @@ html {
     "Lucida Sans", Arial, sans-serif;
 }
 #j {
-  margin-left: 190px;
+  margin-left: 0px;
 }
 #k {
   margin-left: 10px;
@@ -850,13 +906,15 @@ html {
   background-attachment: fixed;
   height: 140vh;
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 .ctc {
   background: azure;
   height: 600px;
   width: 1100px;
   margin-top: 150px;
-  margin-left: 130px;
+  /* margin-left: 130px;   */
   position: absolute;
   top: 50px;
   display: flex;
@@ -1086,7 +1144,7 @@ html {
   #skill .skill_h1 {
     font-size: 40px;
     font-family: "Alata", sans-serif;
-text-shadow: none;
+    text-shadow: none;
     font-variant: small-caps;
     font-weight: bold;
     letter-spacing: 7px;
@@ -1410,4 +1468,48 @@ text-shadow: none;
   .textarea::placeholder {
     color: white;
   }
+  /* ----------------------- */
+  .footer_section {
+    display: none;
+  }
+  .footer_section_responsive{
+    display: block;
+    margin-top: 5rem;
+  }
+  .footer_section_responsive a {
+    font-size: 18px;
+    margin-right: 5px;
+    color: white;
+  }
+  
+#facebook {
+  background: blue;
+  padding: 16px 22px;
+  border-radius: 50px;
+  box-shadow: 3px 2px 5px 0px black;
+}
+#twitter {
+  background: dodgerblue;
+  padding: 16px 19px;
+  border-radius: 50px;
+  box-shadow: 3px 2px 5px 0px black;
+}
+#youtube {
+  background: red;
+  padding: 16px 19px;
+  border-radius: 50px;
+  box-shadow: 3px 2px 5px 0px black;
+}
+#linkedin {
+  background: dodgerblue;
+  padding: 16px 19px;
+  border-radius: 50px;
+  box-shadow: 3px 2px 5px 0px black;
+}
+#instagram {
+  background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+  padding: 16px 19px;
+  border-radius: 50px;
+  box-shadow: 3px 2px 5px 0px black;
+}
 }
